@@ -4,6 +4,7 @@ import { useQuery } from "@apollo/react-hooks";
 import { useStoreContext } from "../utils/GlobalState";
 import { UPDATE_PRODUCTS } from "../utils/actions";
 import { QUERY_PRODUCTS } from "../utils/queries";
+import Cart from "../components/Cart";
 import spinner from "../assets/spinner.gif";
 
 function Detail() {
@@ -64,6 +65,7 @@ function Detail() {
             {
                 loading ? <img src={spinner} alt="loading" /> : null
             }
+            <Cart />
         </>
     );
 };
