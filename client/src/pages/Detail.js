@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/react-hooks";
-import { useStoreContext } from "../utils/GlobalState";
+// import { useStoreContext } from "../utils/GlobalState";
+import { useDispatch, useSelector } from "react-redux";
 import {
     UPDATE_PRODUCTS, ADD_TO_CART, REMOVE_FROM_CART, UPDATE_CART_QUANTITY
 } from "../utils/actions";
@@ -11,7 +12,8 @@ import Cart from "../components/Cart";
 import spinner from "../assets/spinner.gif";
 
 function Detail() {
-    const [state, dispatch] = useStoreContext();
+    const dispatch = useDispatch();
+    const state = useSelector(state => state);
 
     const { products, cart } = state;
 

@@ -14,7 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0"
   },
   "devDependencies": {
     "concurrently": "^6.0.2"
