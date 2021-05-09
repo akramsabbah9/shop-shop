@@ -19,4 +19,4 @@ You will need Node.js and MongoDB installed on your local machine to run this ap
 1. Clone this repository to your local machine.
 2. Navigate to the root directory of this project in your console.
 3. Use ```npm install``` to install the dependencies for this project.
-4. You may now start Book Search using ```npm start```.
+4. You may now start Shop-Shop using ```npm start```.
